@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Urbanist-VariableFont_wght";
+  src: url(../fonts/Urbanist-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Urbanist-Italic-VariableFont_wght";
+  src: url(../fonts/Urbanist-Italic-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Urbanist-VariableFont_wght", "sans-serif";
+  font-size: 16px;
+  min-width: 80vw;
+  margin: 0 20px;
+}
+
+h1 {
+  font-size: 68px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* * ---------------------- Header ---------------------- */
+
+/* ---------- Navigation --------- */
+
+.div_navbar {
+  border: 1px solid black;
+  border-radius: 45px;
+}
+
+.div_navbar nav {
+  display: none;
+}
+
+.div_navbar a img {
+  width: 52px;
+  height: 46px;
+}
+
+.burger_wrapper {
+  padding: 6px;
+}
+
+.burger {
+  background-color: black;
+  height: 2px;
+  width: 24px;
+  margin: 6px;
+  border-radius: 6px;
+}
+
+.div_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+/* ---------- Section Hero --------- */
+
+.div_heroStart {
+  background-image: url("../img/background_header1.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
