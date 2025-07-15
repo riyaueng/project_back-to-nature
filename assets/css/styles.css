@@ -18,7 +18,6 @@ body {
   font-family: "Urbanist-VariableFont_wght", "sans-serif";
   font-size: 16px;
   min-width: 80vw;
-  margin: 20px 20px;
 }
 
 h1 {
@@ -41,6 +40,10 @@ a {
 }
 
 /* * ---------------------- Header ---------------------- */
+
+header {
+  padding: 20px 20px;
+}
 
 /* ---------- Navigation --------- */
 
@@ -85,7 +88,7 @@ a {
   background-position: top;
   background-size: cover;
   height: 30vh;
-  margin-top: 1rem;
+  margin: 1rem 1rem;
   position: relative;
 }
 
@@ -103,4 +106,99 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 5vh;
+}
+
+.hero_buttons button {
+  border: 1px solid black;
+  box-shadow: -2px -2px 0px 2px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 30px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.link_wo,
+.link_wann {
+  background-color: white;
+}
+
+.link_suchen {
+  background-color: #a9cba6;
+  color: white;
+}
+
+.svg_white {
+  filter: invert(100%);
+}
+
+/* * ---------------------- Section USP ---------------------- */
+
+.div_einleitung {
+  text-align: center;
+  padding: 10px 30px;
+  margin-bottom: 5vh;
+}
+
+.div_einleitung h2 {
+  margin-bottom: 1.5rem;
+}
+
+.section_usp {
+  margin: 5vh 0;
+  background-image: url(../img/background_bulbgreen.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.uspbox {
+  text-align: center;
+  line-height: 1.5rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 16px;
+  box-shadow: -2px -2px 0px 2px rgba(0, 0, 0, 0.3) inset;
+  width: 45vw;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.uspbox a {
+  color: black;
+}
+
+.uspbox a img {
+  width: 100%;
+}
+
+.box_km a img {
+  width: 80%;
+}
+
+/*? ---------- Buttons --------- */
+
+.button_green {
+  border: 1px solid black;
+  box-shadow: -2px -2px 0px 2px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 30px;
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #a9cba6;
+  color: white;
 }
