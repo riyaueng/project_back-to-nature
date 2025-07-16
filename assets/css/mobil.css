@@ -37,6 +37,11 @@ h3 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* * ---------------------- Header ---------------------- */
@@ -70,7 +75,7 @@ header {
   height: 2px;
   width: 24px;
   margin: 6px;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 .div_navbar {
@@ -82,13 +87,17 @@ header {
 
 /* ---------- Section Hero --------- */
 
-.div_heroStart {
+.section_hero {
   background-image: url("../img/background_header1.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
+  background-size: 100vw;
+  margin-bottom: 5vh;
+}
+
+.div_heroStart {
   height: 30vh;
-  margin: 1rem 1rem;
+  margin: 1rem 1rem 0 1rem;
   position: relative;
 }
 
@@ -99,14 +108,13 @@ header {
   top: 10vh;
 }
 
-/* ---------- Section Hero --------- */
+/* ---------- Hero Buttons --------- */
 
 .hero_buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5vh;
 }
 
 .hero_buttons button {
@@ -149,8 +157,15 @@ header {
   margin-bottom: 1.5rem;
 }
 
+.section_usp,
+.section_auswahl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .section_usp {
-  margin: 5vh 0;
   background-image: url(../img/background_bulbgreen.svg);
   background-repeat: no-repeat;
   background-position: top;
@@ -159,6 +174,12 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.div_uspBoxen,
+.div_angeboteBoxen {
+  margin-bottom: 5vh;
 }
 
 .uspbox {
@@ -170,7 +191,7 @@ header {
   box-shadow: -2px -2px 0px 2px rgba(0, 0, 0, 0.3) inset;
   width: 45vw;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .uspbox a {
@@ -187,18 +208,144 @@ header {
 
 /*? ---------- Buttons --------- */
 
-.button_green {
+.btnstyle {
   border: 1px solid black;
   box-shadow: -2px -2px 0px 2px rgba(0, 0, 0, 0.3) inset;
   border-radius: 30px;
   padding: 16px 32px;
-  margin-bottom: 20px;
-  width: 60vw;
+  width: 70vw;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   font-weight: 700;
+}
+
+.button_green {
+  margin-bottom: 20px;
   background-color: #a9cba6;
   color: white;
+}
+
+.button_white {
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+}
+
+.link_text {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* * ---------------------- Section Auswahl ---------------------- */
+
+.section_auswahl {
+  background-image: url(../img/background_bulbblue.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100vw;
+}
+
+.angeboteBox {
+  line-height: 1.5rem;
+  background-color: #f0cea0;
+  border: 1px solid black;
+  border-radius: 50px;
+  box-shadow: -2px -2px 0px 2px rgba(0, 0, 0, 0.3) inset;
+  width: 85vw;
+  margin-bottom: 1.25rem;
+}
+
+.angeboteBilder {
+  background-color: white;
+  border-radius: 50px 50px 0 0;
+  border-bottom: 1px solid black;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.angeboteBilder img {
+  width: 100%;
+}
+
+.angebotePreise,
+.angeboteBox ul {
+  padding: 5px 34px;
+}
+
+.angebotePreise {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.angebotePreise h2 {
+  margin-bottom: 1rem;
+}
+
+.angebotePreise p {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.angebotePreise p::before {
+  content: "ab ";
+  font-size: 20px;
+}
+
+.angeboteBox ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.angeboteLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* * ---------------------- Footer ---------------------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+.footer_logo {
+  padding: 18px;
+}
+
+footer a {
+  color: black;
+}
+
+footer li {
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.div_socials {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 24px;
+}
+
+.div_footerinfo {
+  padding: 10px;
+  margin-bottom: 1.25rem;
+  font-size: 10px;
+}
+
+.div_footerinfo a:nth-child(-n + 2)::after {
+  content: " |";
 }

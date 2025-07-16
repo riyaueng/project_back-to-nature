@@ -1,0 +1,27 @@
+@media only screen and (min-width: 992px) {
+  .burger_wrapper {
+    display: none;
+  }
+
+  .div_navbar nav {
+    display: block;
+  }
+
+  .nav_liste {
+    display: flex;
+    justify-content: space-around;
+    gap: 2.5rem;
+    padding-right: 14px;
+  }
+
+  .nav_liste li:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+    font-weight: 900;
+  }
+
+  .nav_liste a {
+    text-transform: uppercase;
+    color: black;
+  }
+}

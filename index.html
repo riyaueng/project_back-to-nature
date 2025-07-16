@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/mobil.css" />
     <link rel="stylesheet" href="./assets/css/tablet.css" />
     <link rel="stylesheet" href="./assets/css/desktop.css" />
     <title>Back to nature</title>
@@ -15,7 +15,7 @@
           <img src="./assets/img/logo.svg" alt="Campside Logo" />
         </a>
         <nav>
-          <ul>
+          <ul class="nav_liste">
             <li><a href="#">Campermiete</a></li>
             <li><a href="#">Camper-Abo</a></li>
             <li><a href="#">Off-Guide</a></li>
@@ -37,17 +37,17 @@
       </div>
 
       <div class="hero_buttons">
-        <button class="link_wo">
+        <button type="button" class="link_wo">
           <img src="./assets/img/icon_black_location.svg" alt="Location Icon" />Egal wo
           <img src="./assets/img/arrow_down.svg" alt="Pfeil nach unten" />
         </button>
 
-        <button class="link_wann">
+        <button type="button" class="link_wann">
           <img src="./assets/img/icon_black_calendar.svg" alt="Kalendar Icon" />Egal wann
           <img src="./assets/img/arrow_down.svg" alt="Pfeil nach unten" />
         </button>
 
-        <button class="link_suchen">
+        <button type="button" class="link_suchen">
           <img class="svg_white" src="./assets/img/icon_black_search.svg" alt="Suche Icon" />Suchen
           <img class="svg_white" src="./assets/img/arrow_right.svg" alt="Pfeil nach rechts" />
         </button>
@@ -104,8 +104,10 @@
         </div>
       </div>
 
-      <a class="button_green link_suchen" href="#">
-        <img class="svg_white" src="./assets/img/icon_black_search.svg" alt="Icon Suche" />Camper finden
+      <a class="btnstyle button_green" href="#">
+        <img class="svg_white" src="./assets/img/icon_black_search.svg" alt="Icon Suche" /><span class="link_text"
+          >Camper finden</span
+        >
       </a>
     </section>
 
@@ -119,10 +121,14 @@
         </p>
       </div>
       <div class="div_angeboteBoxen">
-        <div class="box_beach">
-          <img src="./assets/img/illustration_beach.svg" alt="Illustration Beach-Camper" />
-          <h2>Beach</h2>
-          <p>ab 39€</p>
+        <div class="angeboteBox box_beach">
+          <div class="angeboteBilder">
+            <img src="./assets/img/illustration_beach.svg" alt="Illustration Beach-Camper" />
+          </div>
+          <div class="angebotePreise">
+            <h2>Beach</h2>
+            <p>39€</p>
+          </div>
           <ul>
             <li>
               <img src="./assets/img/icon_black_night.svg" alt="Icon Mond" />
@@ -145,14 +151,20 @@
               <p>Mobile Kompressorkühlbox</p>
             </li>
           </ul>
-          <a class="button_white" href="#">Verfügbarkeit &amp; Info</a>
-          <a class="button_green" href="#">Jetzt buchen</a>
+          <div class="angeboteLinks">
+            <a class="btnstyle button_white" href="#">Verfügbarkeit &amp; Info</a>
+            <a class="btnstyle button_green" href="#">Jetzt buchen</a>
+          </div>
         </div>
 
-        <div class="box_ocean">
-          <img src="./assets/img/illustration_ocean.svg" alt="Illustration Ocean-Camper" />
-          <h2>Ocean</h2>
-          <p>ab 49€</p>
+        <div class="angeboteBox box_ocean">
+          <div class="angeboteBilder">
+            <img src="./assets/img/illustration_ocean.svg" alt="Illustration Ocean-Camper" />
+          </div>
+          <div class="angebotePreise">
+            <h2>Ocean</h2>
+            <p>49€</p>
+          </div>
           <ul>
             <li>
               <img src="./assets/img/icon_black_night.svg" alt="Icon Mond" />
@@ -175,14 +187,20 @@
               <p>Mobile Kompressorkühlbox</p>
             </li>
           </ul>
-          <a class="button_white" href="#">Verfügbarkeit &amp; Info</a>
-          <a class="button_green" href="#">Jetzt buchen</a>
+          <div class="angeboteLinks">
+            <a class="btnstyle button_white" href="#">Verfügbarkeit &amp; Info</a>
+            <a class="btnstyle button_green" href="#">Jetzt buchen</a>
+          </div>
         </div>
 
-        <div class="box_mountain">
-          <img src="./assets/img/illustration_mountain.svg" alt="Illustration Mountain-Camper" />
-          <h2>Mountain</h2>
-          <p>ab 59€</p>
+        <div class="angeboteBox box_mountain">
+          <div class="angeboteBilder">
+            <img src="./assets/img/illustration_mountain.svg" alt="Illustration Mountain-Camper" />
+          </div>
+          <div class="angebotePreise">
+            <h2>Mountain</h2>
+            <p>59€</p>
+          </div>
           <ul>
             <li>
               <img src="./assets/img/icon_black_night.svg" alt="Icon Mond" />
@@ -205,14 +223,18 @@
               <p>Mobile Kompressorkühlbox</p>
             </li>
           </ul>
-          <a class="button_white" href="#">Verfügbarkeit &amp; Info</a>
-          <a class="button_green" href="#">Jetzt buchen</a>
+          <div class="angeboteLinks">
+            <a class="btnstyle button_white" href="#">Verfügbarkeit &amp; Info</a>
+            <a class="btnstyle button_green" href="#">Jetzt buchen</a>
+          </div>
         </div>
       </div>
     </section>
 
     <footer>
-      <img src="./assets/img/logo.svg" alt="Campside Logo" />
+      <div class="footer_logo">
+        <img src="./assets/img/logo.svg" alt="Campside Logo" />
+      </div>
 
       <ul class="footer_nav">
         <li><a href="#">Campermiete</a></li>
