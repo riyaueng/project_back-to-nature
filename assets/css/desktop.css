@@ -1,4 +1,6 @@
 @media only screen and (min-width: 992px) {
+  /* ---------- Navigation --------- */
+
   .burger_wrapper {
     display: none;
   }
@@ -23,5 +25,80 @@
   .nav_liste a {
     text-transform: uppercase;
     color: black;
+  }
+
+  /* ---------- Section Hero --------- */
+
+  .section_hero {
+    background-size: 80vw;
+    margin: 0 8% 8%;
+  }
+
+  .div_heroStart {
+    height: 30rem;
+    margin: 40px;
+  }
+
+  .div_heroStart h1 {
+    font-size: 6.4rem;
+    line-height: 5.5rem;
+    left: 8vw;
+    top: 22vh;
+  }
+
+  /* ---------- Section Hero --------- */
+
+  .hero_buttons {
+    gap: 20px;
+  }
+
+  .hero_buttons button {
+    width: 22vw;
+    margin-bottom: 0;
+  }
+
+  /* * ---------------------- Section USP ---------------------- */
+
+  .div_einleitung {
+    padding: 10px 28vw;
+  }
+
+  .uspbox {
+    width: 16vw;
+    min-height: 40vh;
+  }
+
+  /*? ---------- Buttons --------- */
+
+  .btnstyle {
+    width: 20vw;
+  }
+
+  /* * ---------------------- Section Auswahl ---------------------- */
+
+  .section_auswahl {
+    padding: 4rem 0;
+  }
+
+  .div_angeboteBoxen {
+    gap: 48px;
+  }
+
+  .angeboteBox {
+    width: 26vw;
+  }
+
+  /* * ---------------------- Footer ---------------------- */
+
+  .footer_nav {
+    gap: 3.5rem;
+  }
+
+  footer li {
+    margin-bottom: 1.5rem;
+  }
+
+  .div_footerinfo {
+    margin-bottom: 2rem;
   }
 }
